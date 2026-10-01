@@ -74,6 +74,17 @@ Run `npm run build` before using either production preview command.
 
 ## Architecture and Deployment
 
-The project is a client-rendered single-page application. Vite handles development and production builds, while React Router provides client-side navigation and route parameters. The original page designs, shared components, data, and image assets were retained during the migration from Next.js. Each route is lazy-loaded so its design assets are downloaded when that route is opened.
+## ByteSpace New
 
-Server-side rendering and static site generation are not configured. When deploying to static hosting, configure the host to serve `index.html` as the fallback for application routes; otherwise, directly refreshing a nested URL may return a 404.
+The project is a client-rendered single-page application built with React and Vite. Vite is used for development and production builds, while React Router handles client-side navigation and route parameters.
+
+The project includes reusable components, shared data, and image assets across the different pages. Each route is lazy-loaded so that route-specific code and assets are loaded when the route is accessed.
+
+### Highlights
+
+* React + Vite
+* React Router for client-side routing
+* Reusable components
+* Lazy-loaded routes
+* Responsive layouts
+* Shared data and image assets
